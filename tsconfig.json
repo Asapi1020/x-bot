@@ -1,0 +1,12 @@
+{
+	"compilerOptions": {
+	  "moduleResolution": "nodenext",
+	  "outDir": "./dist",        // 出力ディレクトリ
+	  "target": "ES6",           // JavaScriptのターゲットバージョン
+	  "module": "NodeNext",      // モジュールシステム
+	  "strict": true             // 厳格な型チェックを有効にする
+	},
+	"include": ["src/**/*"],      // コンパイル対象ファイル
+	"exclude": ["node_modules"]   // 除外ファイル
+  }
+  

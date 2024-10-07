@@ -1,0 +1,15 @@
+{
+	"scripts": {
+		"dev": "dotenv -e .env -- pnpm ts-node src/app.ts"
+	},
+	"dependencies": {
+		"dotenv": "^16.4.5",
+		"twitter-api-v2": "^1.17.2"
+	},
+	"devDependencies": {
+		"@types/node": "^22.7.4",
+		"dotenv-cli": "^7.4.2",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.6.2"
+	}
+}
