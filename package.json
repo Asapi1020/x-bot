@@ -1,5 +1,9 @@
 {
+	"name": "x-bot",
 	"scripts": {
+		"format": "biome format --write",
+		"lint": "biome lint",
+		"check": "biome check",
 		"dev": "dotenv -e .env -- pnpm ts-node src/app.ts"
 	},
 	"dependencies": {
@@ -7,6 +11,7 @@
 		"twitter-api-v2": "^1.17.2"
 	},
 	"devDependencies": {
+		"@biomejs/biome": "^1.9.3",
 		"@types/node": "^22.7.4",
 		"@vercel/node": "^3.2.19",
 		"dotenv-cli": "^7.4.2",
