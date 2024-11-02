@@ -30,6 +30,7 @@ export class TwitterApiClient {
 		try {
 			const mediaId = await this.client.v1.uploadMedia(buffer, {
 				mimeType: EUploadMimeType.Mp4,
+				longVideo: true,
 			});
 			console.log("Uploaded video:", mediaId);
 			return mediaId;

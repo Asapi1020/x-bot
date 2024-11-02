@@ -1,5 +1,9 @@
 {
-	"name": "x-bot",
+	"name": "@asp1020/x-bot",
+	"version": "1.0.2",
+	"main": "dist/TwitterApiClient.js",
+	"types": "dist/TwitterApiClient.d.js",
+	"files": ["dist"],
 	"scripts": {
 		"format": "biome format --write",
 		"lint": "biome lint",
