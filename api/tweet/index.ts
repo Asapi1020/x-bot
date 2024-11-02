@@ -4,6 +4,9 @@ import { twitterApiConfig } from "../../src/config";
 import { streamToBuffer } from "../../src/streamHelper";
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
+	if (req.method === "OPTIONS") {
+		return res.status(200).end();
+	}
 	if (req.method === "POST") {
 		const authHeader = req.headers.authorization;
 		if (!authHeader || authHeader !== process.env.AUTH_KEY) {
